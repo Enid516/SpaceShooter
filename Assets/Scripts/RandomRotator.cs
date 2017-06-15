@@ -7,6 +7,7 @@ public class RandomRotator : MonoBehaviour {
     public float tumble;
 	// Use this for initialization
 	void Start () {
+        Random.Range(0.01f,1);
         GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
 	}
 }
